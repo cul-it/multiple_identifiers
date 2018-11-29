@@ -71,7 +71,7 @@ serializer_for :ead
 
             serialize_did_notes(data, xml, @fragments)
 
-            data.instances_with_containers.each do |instance|
+            data.instances_with_sub_containers.each do |instance|
               serialize_container(instance, xml, @fragments)
             end
 
